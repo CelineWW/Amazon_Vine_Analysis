@@ -63,9 +63,9 @@ https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Office_Product
 
     1. There are *969* vine reviews in total.  There are *43745* non-vine reviews in total.  
     2. There are *430* 5-star vine reviews.  There are *19233* 5-star non-vine reviews.  
-    3. 44.38% of vine reviews are 5-star. 43.97% of non-vine reviews are 5-star.
+    3. *44.38%* of vine reviews are 5-star. *43.97%* of non-vine reviews are 5-star.
+    
       ```
-      
       +------------------+--------------+------------------+
       |                  | Vine Reviews | Non-Vine Reviews |
       |------------------+--------------+------------------|
