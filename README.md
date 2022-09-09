@@ -1,6 +1,6 @@
 # Amazon_Vine_Analysis
 ## Overview 
-The Amazon Vine program allows vendors and sellers to provide free or discount products to Vine members to recevie reviews for their products. SellyBy is a company considering to enroll in this program to reqiure reviews from Amazon Vine members. This project aims to analyze Amazon reviews to reveal if there is any difference between Vine reviews and Non-Vine reviews. Then help SellyBy to make a decision on whether enrolling in Amazon Vine program or not.
+The Amazon Vine program allows vendors and sellers to provide free or discount products to Vine members to recevie reviews for their products. SellyBy is a company considering to enroll in this program to reqiure reviews from Amazon Vine members. This project aims to analyze Amazon reviews to reveal if there is any difference between Vine reviews and Non-Vine reviews. The result will help SellyBy to check if there is any positivity bias for reviews in the Vine program, so the manager can make a decision on whether enrolling in Amazon Vine program or not.
 - Use PySpark and Amazon RDS to perform ETL on Amazon office product reviews.
 - Create table and Export data to local disk in PgAdmin.
 - Read data into PySpark DataFrames.
@@ -62,31 +62,24 @@ PySpark, PgAdmin
 
     ![Vine_Review_Analysis Summary](https://user-images.githubusercontent.com/105877888/189427264-f3ef1b60-5379-4b2a-862b-081d46b1f805.png)
 
-```
-+------------------+--------------+------------------+
-|                  | Vine Reviews | Non-Vine Reviews |
-|------------------+--------------+------------------|
-| Total Reviews    |      969     |      43745       |
-|------------------+--------------+------------------|
-| 5-star Reviews   |      430     |      19233       |
-|------------------+--------------+------------------|
-| % of 5-star      |      44.38   |      43.97       |
-+------------------+--------------+------------------+
-```
+    
+      ```
+      +------------------+--------------+------------------+
+      |                  | Vine Reviews | Non-Vine Reviews |
+      |------------------+--------------+------------------|
+      | Total Reviews    |      969     |      43745       |
+      |------------------+--------------+------------------|
+      | 5-star Reviews   |      430     |      19233       |
+      |------------------+--------------+------------------|
+      | % of 5-star      |      44.38   |      43.97       |
+      +------------------+--------------+------------------+
+      ```
 
 
-
-Results: Using bulleted lists and images of DataFrames as support, address the following questions:
-How many Vine reviews and non-Vine reviews were there?
-How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
-What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
 Summary: In your summary, state if there is any positivity bias for reviews in the Vine program. Use the results of your analysis to support your statement. Then, provide one additional analysis that you could do with the dataset to support your statement.
 The written analysis has the following:
-Overview of the analysis of the Vine program:
-The purpose of this analysis is well defined (3 pt)
-Results:
-There is a bulleted list that addresses the three questions for unpaid and paid program reviews (7 pt)
-Summary:
+
+
 The summary states whether or not there is bias, and the results support this statement (2 pt)
 An additional analysis is recommended to support the statement (2 pt)
 
