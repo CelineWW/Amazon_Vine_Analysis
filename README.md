@@ -2,7 +2,7 @@
 ## Overview 
 The Amazon Vine program allows vendors and sellers to provide free or discount products to Vine members to recevie reviews for their products. SellyBy is a company considering to enroll in this program to reqiure reviews from Amazon Vine members. This project aims to analyze Amazon reviews to reveal if there is any difference between Vine reviews and Non-Vine reviews. The result will help SellyBy to check if there is any positivity bias for reviews in the Vine program, so the manager can make a decision on whether enrolling in Amazon Vine program or not.
 - Use PySpark and Amazon RDS to perform ETL on Amazon office product reviews.
-- Create table and Export data to local disk in PgAdmin.
+- Create table and export data for further analysis in PgAdmin.
 - Read data into PySpark DataFrames.
 - Perform anlysis on vine table by filtering PySparkDataFrame.
 
@@ -10,9 +10,8 @@ The Amazon Vine program allows vendors and sellers to provide free or discount p
 https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Office_Products_v1_00.tsv.gz
 
 ## Tools:
-Amazon RDS, Amazon S3 bucket, Google Colab notebook
-PySpark, PgAdmin 
-
+- Amazon RDS, Amazon S3 bucket, Google Colab notebook
+- PySpark, PgAdmin 
 
 ## Results:
 - Raw data for Amazon office product reviews.
