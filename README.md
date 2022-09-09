@@ -79,9 +79,8 @@ https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Office_Product
 ## Summary
 - Based on the results above, the percentages of 5-star reviews from vine members and non-vine members are very close. Persumably, Amazon Vine members are being honest to post their comments on office products. There is no positivity bias for reviews in the Vine program.
 - To be more precisely, we can do further anaylsis on star ratings to determine the difference such as follows:
-  - Perform statistic analysis: mean, median, mode of vine reviews and non-vine reviews.
+  - Perform statistic analysis: mean, median, mode, variance, standard deviation of vine reviews and non-vine reviews.
   - Perform two-sample-test to compare star ratings of vine reviews and non-vine reviews to check if they are significantly different.
-  - Filter both 5 stars and 4 stars ratings to do perform analysis. For 4 stars is also positive comment, buyers will refer these comment too.
-  - For the vine reviews subset of data, we can break it into trainnig and testing data. Take 1 or 2 stars as negative, 4 and 5 stars as positive. Import the BinaryClassificationEvaluator to determine the accurancy of model on predicting vine reviews would be positive or negative.
+  - Filter both 5 stars and 4 stars ratings to do analysis. 4 stars is also positive comment, buyers will refer these comment too.
   - Choose one or more other categories of Amazon products to do similar analysis.
 
