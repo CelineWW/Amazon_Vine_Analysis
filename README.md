@@ -62,8 +62,11 @@ PySpark, PgAdmin
 
     ![Vine_Review_Analysis Summary](https://user-images.githubusercontent.com/105877888/189427264-f3ef1b60-5379-4b2a-862b-081d46b1f805.png)
 
-    
+    1. There are *969* vine reviews in total.  There are *43745* non-vine reviews in total.  
+    2. There are *430* 5-star vine reviews.  There are *19233* 5-star non-vine reviews.  
+    3. 44.38% of vine reviews are 5-star. 43.97% of non-vine reviews are 5-star.
       ```
+      
       +------------------+--------------+------------------+
       |                  | Vine Reviews | Non-Vine Reviews |
       |------------------+--------------+------------------|
@@ -74,7 +77,12 @@ PySpark, PgAdmin
       | % of 5-star      |      44.38   |      43.97       |
       +------------------+--------------+------------------+
       ```
-
+## Summary
+- Based on the results above, the percentages of 5-star reviews from vine members and non-vine members are very close. Persumably, Amazon Vine members are being honest to post their comments on office products. There is no positivity bias for reviews in the Vine program.
+- To be more precisely, we can do further anaylsis on star ratings to determine the difference such as follows:
+  - Perform statistic analysis: mean, median, mode of vine reviews and non-vine reviews.
+  - Perform two-sample-test to compare star ratings of vine reviews and non-vine reviews.
+  - Choose one or more other categories of Amazon products to do similar analysis.
 
 Summary: In your summary, state if there is any positivity bias for reviews in the Vine program. Use the results of your analysis to support your statement. Then, provide one additional analysis that you could do with the dataset to support your statement.
 The written analysis has the following:
