@@ -81,12 +81,8 @@ PySpark, PgAdmin
 - Based on the results above, the percentages of 5-star reviews from vine members and non-vine members are very close. Persumably, Amazon Vine members are being honest to post their comments on office products. There is no positivity bias for reviews in the Vine program.
 - To be more precisely, we can do further anaylsis on star ratings to determine the difference such as follows:
   - Perform statistic analysis: mean, median, mode of vine reviews and non-vine reviews.
-  - Perform two-sample-test to compare star ratings of vine reviews and non-vine reviews.
+  - Perform two-sample-test to compare star ratings of vine reviews and non-vine reviews to check if they are significantly different.
+  - Filter both 5 stars and 4 stars ratings to do perform analysis. For 4 stars is also positive comment, buyers will refer these comment too.
+  - For the vine reviews subset of data, we can break it into trainnig and testing data. Take 1 or 2 stars as negative, 4 and 5 stars as positive. Import the BinaryClassificationEvaluator to determine the accurancy of model on predicting vine reviews would be positive or negative.
   - Choose one or more other categories of Amazon products to do similar analysis.
 
-Summary: In your summary, state if there is any positivity bias for reviews in the Vine program. Use the results of your analysis to support your statement. Then, provide one additional analysis that you could do with the dataset to support your statement.
-The written analysis has the following:
-
-
-The summary states whether or not there is bias, and the results support this statement (2 pt)
-An additional analysis is recommended to support the statement (2 pt)
